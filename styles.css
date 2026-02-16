@@ -52,17 +52,19 @@ ul {
     border-radius: 30px;
     padding: 10px 32px;
     border: none;
+    cursor: pointer;
+    transition: all 300ms ease;
 }
 
 .section__tag {
     color: #6415ff;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: bold;
     margin-bottom: 24px;
 }
 
 .section__title {
-    font-size: 40px;
+    font-size: 48px;
     font-weight: 900;
     margin-bottom: 24px;
 }
@@ -70,8 +72,7 @@ ul {
 .section__para {
     color: gray;
     max-width: 500px;
-    text-align: center;
-    font-size: 15px;
+    font-size: 18px;
     line-height: 1.5;
 }
 
@@ -129,11 +130,11 @@ NAVBAR ↓
     color: white;
     border-radius: 30px;
     padding: 10px 32px;
+    transition: all 300ms ease;
 }
 
-.nav__link--primary:hover {
+.nav__link--primary:hover, .btn:hover {
     background-color: #5214cf;
-    transition: all 300ms ease;
     text-decoration: none;
 }
 
@@ -223,17 +224,18 @@ header .row {
     width: 40%;
     display: flex;
     flex-direction: column;
-    margin-right: 24px;
+    margin-right: 64px;
 }
 
 .header__img--wrapper {
     width: 60%;
-    margin-left: 24px;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .header__img {
     width: 100%;
-    max-height: 70vh;
+    max-width: 500px;
 }
 
 .header__description--title {
@@ -278,6 +280,10 @@ FEATURES ↓
     align-items: center;
 }
 
+#features .section__para {
+    text-align: center;
+}
+
 .services {
     display: flex;
     justify-content: center;
@@ -295,12 +301,14 @@ FEATURES ↓
 
 .service__logo {
     border-radius: 50%;
-    border: 1px solid rgb(207, 205, 205);
-    width: 56px;
-    height: 56px;
+    border: 0.5px solid rgb(222, 221, 221);
+    width: 64px;
+    height: 64px;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 24px;
+    margin: 0 16px;
 }
 
 .service__description {
@@ -310,11 +318,12 @@ FEATURES ↓
 
 .service__description--title {
     margin-bottom: 16px;
+    font-size: 24px;
 }
 
 .service__description--para {
     color: gray;
-    font-size: 13px;
+    font-size: 16px;
     line-height: 2;
     font-weight: 500;
     max-width: 200px;
@@ -332,6 +341,32 @@ QUALITY WORK ↓
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+}
+
+#quality .section__para {
+    margin-bottom: 24px;
+}
+
+.quality__description {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-right: 64px;
+    padding: 32px 0;
+    max-width: 500px;
+}
+
+.quality__img--wrapper {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.quality__img {
+    width: 100%;
+    max-width: 500px;
+    border: 0.5px solid rgb(222, 221, 221);
 }
 
 
@@ -348,6 +383,57 @@ STEPS ↓
     align-items: center;
 }
 
+.steps__img--wrapper {
+    width: 50%;
+}
+
+.steps__img {
+    width: 100%;
+}
+
+.steps__container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 32px 0;
+    margin-left: 64px;
+}
+
+.steps {
+    display: flex;
+    flex-direction: column;
+    margin-top: 24px;
+}
+
+.step {
+    display: flex;
+    margin-bottom: 32px;
+}
+
+.step__number {
+    opacity: 0.2;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.step__description {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin-left: 32px;
+}
+
+.step__title {
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+
+.step__para {
+    opacity: 0.7;
+    font-weight: 500;
+    line-height: 1.8;
+}
+
 
 /* 
 
@@ -361,6 +447,67 @@ VALUES ↓
     align-items: center;
 }
 
+.values__description {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 32px 0;
+    max-width: 500px;
+}
+
+.values__img--wrapper {
+    width: 50%;
+}
+
+.values__img {
+    width: 100%;
+}
+
+.values {
+    display: flex;
+    margin: 24px 0;
+    max-width: 500px;
+}
+
+.value {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding-right: 24px;
+}
+
+.value__title {
+    display: flex;
+    margin-bottom: 24px;
+    align-items: center;
+}
+
+.value__logo--green, .value__logo--red {
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.value__logo--green {
+    background-color: #9ae6b4;
+}
+
+.value__logo--red {
+    background-color: #feb2b2;
+}
+
+.value__logo {
+    font-size: 18px;
+    margin: 8px;
+}
+
+.value__name {
+    font-size: 20px;
+    margin-left: 8px;
+}
 
 /*
 
